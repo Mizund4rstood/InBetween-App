@@ -2,9 +2,9 @@ import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowLeft } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import { Progress } from "@/components/ui/progress";
-import ShareableCards from "@/components/ShareableCards";
-import { supabase } from "@/integrations/supabase/client";
+import { Progress } from "./progress";
+import ShareableCards from "./ShareableCards";
+import { supabase } from "./client";
 import { toast } from "sonner";
 
 const transitions = [

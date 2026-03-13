@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { supabase } from "@/integrations/supabase/client";
+import { supabase } from "./client";
 import { ArrowRight, RotateCcw, X, ChevronRight, ChevronLeft } from "lucide-react";
 import { toast } from "sonner";
-import { fireStars } from "@/lib/confetti";
+import { fireStars } from "./confetti";
 
 interface TransitionData {
   transition: string;

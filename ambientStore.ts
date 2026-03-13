@@ -1,5 +1,5 @@
 import { create } from 'zustand';
-import { haptics } from '@/lib/haptics';
+import { haptics } from './haptics';
 
 export interface Soundscape {
   id: string;

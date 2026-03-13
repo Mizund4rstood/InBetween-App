@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Check, ArrowRight } from 'lucide-react';
-import { haptics } from '@/lib/haptics';
-import { sounds } from '@/lib/sounds';
-import { supabase } from '@/integrations/supabase/client';
+import { haptics } from './haptics';
+import { sounds } from './sounds';
+import { supabase } from './client';
 
 interface Props {
   onContinue: () => void;

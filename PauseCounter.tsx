@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
-import { supabase } from '@/integrations/supabase/client';
-import { useAuth } from '@/hooks/useAuth';
+import { supabase } from './client';
+import { useAuth } from './useAuth';
 import { Pause, ArrowRight } from 'lucide-react';
 
 export default function PauseCounter() {

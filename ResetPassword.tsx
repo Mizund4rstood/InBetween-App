@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { supabase } from '@/integrations/supabase/client';
+import { supabase } from './client';
 import { motion } from 'framer-motion';
 import { Lock, Loader2, CheckCircle, AlertCircle } from 'lucide-react';
 

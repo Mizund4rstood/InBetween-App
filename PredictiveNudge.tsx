@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
-import { useAppStore } from '@/stores/appStore';
-import { callReflect } from '@/lib/reflectService';
-import { calculateStreak } from '@/lib/analytics';
+import { useAppStore } from './appStore';
+import { callReflect } from './reflectService';
+import { calculateStreak } from './analytics';
 import { motion } from 'framer-motion';
 import { Shield, Loader2 } from 'lucide-react';
-import ListenButton from '@/components/ListenButton';
+import ListenButton from './ListenButton';
 
 interface PredictiveNudge {
   message: string;

@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 import { motion } from 'framer-motion';
-import { useAppStore } from '@/stores/appStore';
-import { computeCoreMetrics } from '@/lib/metrics';
+import { useAppStore } from './appStore';
+import { computeCoreMetrics } from './metrics';
 import { Shield } from 'lucide-react';
 
 /**

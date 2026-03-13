@@ -1,4 +1,4 @@
-import { GratitudeEntry } from '@/types';
+import { GratitudeEntry } from './types';
 import { tagText } from './analytics';
 
 export interface PatternInsight {

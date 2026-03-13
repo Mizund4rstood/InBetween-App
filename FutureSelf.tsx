@@ -1,9 +1,9 @@
 import { useState, useRef, useEffect } from 'react';
-import { supabase } from '@/integrations/supabase/client';
+import { supabase } from './client';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Mic, Square, Play, Pause, Trash2, Plus, MessageCircle, Loader2 } from 'lucide-react';
 import { toast } from 'sonner';
-import { haptics } from '@/lib/haptics';
+import { haptics } from './haptics';
 
 interface FutureSelfMessage {
   id: string;

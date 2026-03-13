@@ -1,6 +1,6 @@
 import { Volume2, VolumeX, Loader2, Zap } from 'lucide-react';
-import { useTTS } from '@/hooks/useTTS';
-import { useAppStore } from '@/stores/appStore';
+import { useTTS } from './useTTS';
+import { useAppStore } from './appStore';
 
 interface ListenButtonProps {
   text: string;

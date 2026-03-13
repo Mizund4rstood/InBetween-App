@@ -1,14 +1,14 @@
 import { useMemo, useState } from 'react';
-import { useAppStore, AnalyticsWidget } from '@/stores/appStore';
-import { usePremiumStore } from '@/stores/premiumStore';
-import { PremiumGate } from '@/components/PremiumGate';
-import { pearsonCorrelation, calculateStreak, tagText } from '@/lib/analytics';
+import { useAppStore, AnalyticsWidget } from './appStore';
+import { usePremiumStore } from './premiumStore';
+import { PremiumGate } from './PremiumGate';
+import { pearsonCorrelation, calculateStreak, tagText } from './analytics';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, BarChart, Bar } from 'recharts';
 import { Flame, TrendingUp, Hash, Sparkles, Clock, Heart, MessageCircle, Shield, Settings2, Eye, EyeOff, Activity } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { GratitudeEntry, RegulationState } from '@/types';
-import CoreMetricsDashboard from '@/components/CoreMetricsDashboard';
-import RestlessnessAnalytics from '@/components/RestlessnessAnalytics';
+import { GratitudeEntry, RegulationState } from './types';
+import CoreMetricsDashboard from './CoreMetricsDashboard';
+import RestlessnessAnalytics from './RestlessnessAnalytics';
 
 function getTimeOfDayLabel(hour: number): string {
   if (hour < 6) return 'Early morning';

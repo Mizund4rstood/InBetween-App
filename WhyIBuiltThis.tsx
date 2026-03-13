@@ -2,8 +2,8 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowLeft, Heart, Users, Brain, Compass, Shield, Sparkles, ArrowRight, Eye, RefreshCw, Zap } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
-import MissionStatement from '@/components/MissionStatement';
-import ScienceBehindThePause from '@/components/ScienceBehindThePause';
+import MissionStatement from './MissionStatement';
+import ScienceBehindThePause from './ScienceBehindThePause';
 
 const AUDIENCES = [
   {

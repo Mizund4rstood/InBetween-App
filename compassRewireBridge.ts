@@ -1,5 +1,5 @@
-import { useRewireStore, UrgeType, UrgeEntry } from '@/stores/rewireStore';
-import { CompassTrigger, CompassChoice } from '@/stores/compassStore';
+import { useRewireStore, UrgeType, UrgeEntry } from './rewireStore';
+import { CompassTrigger, CompassChoice } from './compassStore';
 
 /**
  * Maps compass urge text / category to a rewire UrgeType.

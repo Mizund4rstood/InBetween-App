@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useWhyVault, VaultCategory } from '@/hooks/useWhyVault';
-import { usePremiumStore } from '@/stores/premiumStore';
-import { PremiumGate } from '@/components/PremiumGate';
-import { haptics } from '@/lib/haptics';
-import { sounds } from '@/lib/sounds';
+import { useWhyVault, VaultCategory } from './useWhyVault';
+import { usePremiumStore } from './premiumStore';
+import { PremiumGate } from './PremiumGate';
+import { haptics } from './haptics';
+import { sounds } from './sounds';
 import { ChevronLeft, Plus, Pencil, Trash2, Lock, Heart, Compass, Shield } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 

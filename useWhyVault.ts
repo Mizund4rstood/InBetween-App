@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
-import { supabase } from '@/integrations/supabase/client';
+import { supabase } from './client';
 
 export type VaultCategory = 'why_change' | 'who_become' | 'never_back';
 

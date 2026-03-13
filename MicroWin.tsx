@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { haptics } from '@/lib/haptics';
+import { haptics } from './haptics';
 
 export type MicroWinType = 
   | 'pause_used'

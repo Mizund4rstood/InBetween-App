@@ -1,8 +1,8 @@
 import { useState, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Wind, Eye, Brain, Sparkles } from 'lucide-react';
-import { sounds } from '@/lib/sounds';
-import { haptics } from '@/lib/haptics';
+import { sounds } from './sounds';
+import { haptics } from './haptics';
 
 type ResetType = 'breathe' | 'ground' | 'reframe';
 type Phase = 'select' | 'active' | 'complete';

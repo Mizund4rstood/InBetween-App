@@ -1,12 +1,12 @@
 import { useState, useEffect, useRef, useCallback, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useAppStore } from '@/stores/appStore';
-import { calculateStreak } from '@/lib/analytics';
-import { callReflect, streamReflectChat } from '@/lib/reflectService';
+import { useAppStore } from './appStore';
+import { calculateStreak } from './analytics';
+import { callReflect, streamReflectChat } from './reflectService';
 import { ChevronLeft, Sparkles, Send, Brain, Loader2 } from 'lucide-react';
-import ListenButton from '@/components/ListenButton';
-import MediaSourceBadges from '@/components/MediaSourceBadges';
-import Fireflies from '@/components/Fireflies';
+import ListenButton from './ListenButton';
+import MediaSourceBadges from './MediaSourceBadges';
+import Fireflies from './Fireflies';
 import { motion, AnimatePresence } from 'framer-motion';
 import { toast } from 'sonner';
 

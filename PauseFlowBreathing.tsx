@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
-import { sounds } from '@/lib/sounds';
-import { haptics } from '@/lib/haptics';
+import { sounds } from './sounds';
+import { haptics } from './haptics';
 
 interface Props {
   durationSeconds: number;

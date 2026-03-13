@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { useAppStore } from '@/stores/appStore';
-import { formatDate, formatTime } from '@/lib/analytics';
+import { useAppStore } from './appStore';
+import { formatDate, formatTime } from './analytics';
 import { Calendar, List, Trash2, ChevronDown, ChevronUp } from 'lucide-react';
 
 type View = 'list' | 'calendar';

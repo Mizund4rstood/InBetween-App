@@ -1,11 +1,11 @@
 import { useState, useRef, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Music2, Waves, Sparkles, Headphones, Play, Pause, Square, Loader2, Volume2, ExternalLink } from 'lucide-react';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Button } from '@/components/ui/button';
-import { Slider } from '@/components/ui/slider';
-import { haptics } from '@/lib/haptics';
-import { useAmbientStore, SOUNDSCAPES } from '@/stores/ambientStore';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from './tabs';
+import { Button } from './button';
+import { Slider } from './slider';
+import { haptics } from './haptics';
+import { useAmbientStore, SOUNDSCAPES } from './ambientStore';
 
 
 

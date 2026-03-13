@@ -1,7 +1,7 @@
 import { useState, useCallback, useMemo, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Palette, RotateCcw, Sparkles, Wind } from 'lucide-react';
-import { haptics } from '@/lib/haptics';
+import { haptics } from './haptics';
 
 type Mood = 'calm' | 'anxious' | 'sad' | 'energized' | 'grateful' | 'angry' | 'hopeless';
 

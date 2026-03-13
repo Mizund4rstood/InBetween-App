@@ -1,6 +1,6 @@
 import { useMemo, useEffect } from 'react';
-import { useAppStore } from '@/stores/appStore';
-import { useCompassStore } from '@/stores/compassStore';
+import { useAppStore } from './appStore';
+import { useCompassStore } from './compassStore';
 import { motion, AnimatePresence } from 'framer-motion';
 import { TrendingUp, Moon, Sun, Palette, Wind, Eye, Dumbbell, Calendar, Clock, Compass, Brain, Sparkles, Shield } from 'lucide-react';
 

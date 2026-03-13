@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Sun, Moon, ChevronRight, Check } from 'lucide-react';
-import { useAppStore } from '@/stores/appStore';
-import { haptics } from '@/lib/haptics';
+import { useAppStore } from './appStore';
+import { haptics } from './haptics';
 
 const MORNING_FOCUSES = [
   { key: 'calm', emoji: '🌊', label: 'Calm', desc: 'Move through today with ease' },

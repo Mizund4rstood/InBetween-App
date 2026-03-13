@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import { usePremiumStore, PREMIUM_FEATURES, PremiumFeature } from '@/stores/premiumStore';
+import { usePremiumStore, PREMIUM_FEATURES, PremiumFeature } from './premiumStore';
 import { ChevronLeft, Check, Sparkles, Shield, Heart, Brain, Lock } from 'lucide-react';
 import { motion } from 'framer-motion';
 

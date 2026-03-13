@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import { useAuth } from '@/hooks/useAuth';
-import { supabase } from '@/integrations/supabase/client';
-import { lovable } from '@/integrations/lovable/index';
+import { useAuth } from './useAuth';
+import { supabase } from './client';
+import { lovable } from './index';
 import { motion, AnimatePresence } from 'framer-motion';
 import { LogIn, UserPlus, Mail, Lock, User, AlertCircle, Loader2, ArrowLeft } from 'lucide-react';
-import Fireflies from '@/components/Fireflies';
+import Fireflies from './Fireflies';
 
 export default function Auth() {
   const { signIn, signUp } = useAuth();
