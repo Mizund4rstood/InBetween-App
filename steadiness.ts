@@ -1,4 +1,4 @@
-import { GratitudeEntry, RegulationState } from '@/types';
+import { GratitudeEntry, RegulationState } from './types';
 
 // ─── Hidden Engine: Nervous System Analytics ───
 // Tracks regulation patterns, recovery times, activation trends,

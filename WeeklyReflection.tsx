@@ -1,6 +1,6 @@
 import { useMemo, useEffect, useState } from 'react';
-import { useAppStore } from '@/stores/appStore';
-import { useCompassStore } from '@/stores/compassStore';
+import { useAppStore } from './appStore';
+import { useCompassStore } from './compassStore';
 import { motion, AnimatePresence } from 'framer-motion';
 import { BookOpen, ChevronDown, ChevronUp, MessageSquare } from 'lucide-react';
 

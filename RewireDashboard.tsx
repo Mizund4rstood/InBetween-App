@@ -1,5 +1,5 @@
 import { useMemo } from 'react';
-import { useRewireStore } from '@/stores/rewireStore';
+import { useRewireStore } from './rewireStore';
 import { motion } from 'framer-motion';
 import { LineChart, Line, BarChart, Bar, XAxis, YAxis, ResponsiveContainer, Tooltip } from 'recharts';
 import { TrendingDown, Timer, Shuffle, Shield, Flame, Target } from 'lucide-react';

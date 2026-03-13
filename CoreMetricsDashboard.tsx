@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 import { motion } from 'framer-motion';
-import { useAppStore } from '@/stores/appStore';
-import { computeCoreMetrics, MilestoneReport } from '@/lib/metrics';
+import { useAppStore } from './appStore';
+import { computeCoreMetrics, MilestoneReport } from './metrics';
 import { BarChart, Bar, XAxis, YAxis, ResponsiveContainer, Tooltip, Cell } from 'recharts';
 import { TrendingDown, Zap, Eye, Flag, ChevronRight } from 'lucide-react';
 

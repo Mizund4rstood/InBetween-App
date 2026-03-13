@@ -1,4 +1,4 @@
-import { Template, TemplateKey } from '@/types';
+import { Template, TemplateKey } from './types';
 
 export const templates: Template[] = [
   { key: '3-good-things', name: '3 Good Things', description: 'Name three things that went well today', icon: '✨', promptCount: 3 },

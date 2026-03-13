@@ -1,6 +1,6 @@
 import { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useAppStore } from '@/stores/appStore';
+import { useAppStore } from './appStore';
 import { differenceInWeeks, differenceInDays } from 'date-fns';
 import { Eye, Tag, Pause, Brain, Compass, Zap, ChevronRight, Check } from 'lucide-react';
 

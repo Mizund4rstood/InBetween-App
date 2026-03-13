@@ -1,4 +1,4 @@
-import { GratitudeEntry, GroundingSession } from '@/types';
+import { GratitudeEntry, GroundingSession } from './types';
 
 // ─── Core Behavioral Metrics Engine ───
 // Tracks reactivity, regulation speed, and pattern awareness.

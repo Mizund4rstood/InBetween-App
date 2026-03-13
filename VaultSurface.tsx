@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useWhyVault, VaultEntry } from '@/hooks/useWhyVault';
+import { useWhyVault, VaultEntry } from './useWhyVault';
 import { Lock } from 'lucide-react';
 import { motion } from 'framer-motion';
 

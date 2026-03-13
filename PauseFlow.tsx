@@ -1,15 +1,15 @@
 import { useState, useEffect, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
-import { supabase } from '@/integrations/supabase/client';
-import { useAuth } from '@/hooks/useAuth';
+import { supabase } from './client';
+import { useAuth } from './useAuth';
 
-import PauseFlowEntry from '@/components/pause-flow/PauseFlowEntry';
-import PauseFlowBreathing from '@/components/pause-flow/PauseFlowBreathing';
-import PauseFlowAwareness from '@/components/pause-flow/PauseFlowAwareness';
-import PauseFlowUrgeShield from '@/components/pause-flow/PauseFlowUrgeShield';
-import PauseFlowChoice from '@/components/pause-flow/PauseFlowChoice';
-import PauseFlowReinforcement from '@/components/pause-flow/PauseFlowReinforcement';
+import PauseFlowEntry from './PauseFlowEntry';
+import PauseFlowBreathing from './PauseFlowBreathing';
+import PauseFlowAwareness from './PauseFlowAwareness';
+import PauseFlowUrgeShield from './PauseFlowUrgeShield';
+import PauseFlowChoice from './PauseFlowChoice';
+import PauseFlowReinforcement from './PauseFlowReinforcement';
 
 type Step = 'entry' | 'breathing' | 'awareness' | 'urge-shield' | 'choice' | 'reinforcement';
 

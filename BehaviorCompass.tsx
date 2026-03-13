@@ -1,5 +1,5 @@
 import { useMemo, useEffect, useState } from 'react';
-import { useCompassStore } from '@/stores/compassStore';
+import { useCompassStore } from './compassStore';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Compass } from 'lucide-react';
 

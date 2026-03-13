@@ -1,11 +1,11 @@
 import { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useAppStore, VisualMode } from '@/stores/appStore';
-import { GratitudeEntry } from '@/types';
+import { useAppStore, VisualMode } from './appStore';
+import { GratitudeEntry } from './types';
 import { X, Wind, Eye, Timer, ChevronDown } from 'lucide-react';
-import { haptics } from '@/lib/haptics';
-import { fireConfetti } from '@/lib/confetti';
-import { sounds } from '@/lib/sounds';
+import { haptics } from './haptics';
+import { fireConfetti } from './confetti';
+import { sounds } from './sounds';
 import { motion, AnimatePresence } from 'framer-motion';
 
 interface Props {

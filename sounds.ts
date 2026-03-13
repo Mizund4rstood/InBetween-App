@@ -2,7 +2,7 @@
  * Lightweight sound effects using the Web Audio API.
  * No external dependencies — works offline and is instant.
  */
-import { useAppStore } from '@/stores/appStore';
+import { useAppStore } from './appStore';
 
 let ctx: AudioContext | null = null;
 

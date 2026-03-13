@@ -1,7 +1,7 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
-import { GratitudeEntry, GroundingSession } from '@/types';
-import { useMicroWinStore } from '@/components/MicroWin';
+import { GratitudeEntry, GroundingSession } from './types';
+import { useMicroWinStore } from './MicroWin';
 
 export type AppMode = 'ground' | 'compass';
 export type VisualMode = 'roots' | 'canopy' | 'compass' | 'steel';

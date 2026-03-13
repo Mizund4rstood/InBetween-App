@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
-import { useAppStore } from '@/stores/appStore';
-import { callReflect } from '@/lib/reflectService';
-import { calculateStreak } from '@/lib/analytics';
+import { useAppStore } from './appStore';
+import { callReflect } from './reflectService';
+import { calculateStreak } from './analytics';
 import { motion } from 'framer-motion';
 import { Brain, Loader2 } from 'lucide-react';
-import ListenButton from '@/components/ListenButton';
-import MediaSourceBadges from '@/components/MediaSourceBadges';
+import ListenButton from './ListenButton';
+import MediaSourceBadges from './MediaSourceBadges';
 
 export default function IdentityShiftCard() {
   const { entries } = useAppStore();

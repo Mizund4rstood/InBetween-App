@@ -1,8 +1,8 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { Square, Volume2, Music2 } from 'lucide-react';
-import { useAmbientStore, SOUNDSCAPES } from '@/stores/ambientStore';
-import { Slider } from '@/components/ui/slider';
-import { Button } from '@/components/ui/button';
+import { useAmbientStore, SOUNDSCAPES } from './ambientStore';
+import { Slider } from './slider';
+import { Button } from './button';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { usePremiumStore, PremiumFeature, PREMIUM_FEATURES } from '@/stores/premiumStore';
+import { usePremiumStore, PremiumFeature, PREMIUM_FEATURES } from './premiumStore';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Lock, Sparkles, X } from 'lucide-react';
 

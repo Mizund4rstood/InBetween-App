@@ -1,6 +1,6 @@
 import { useEffect, useMemo } from 'react';
-import { useCompassStore } from '@/stores/compassStore';
-import { useAppStore } from '@/stores/appStore';
+import { useCompassStore } from './compassStore';
+import { useAppStore } from './appStore';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Cell } from 'recharts';
 import { TrendingUp, Target, Brain, Zap } from 'lucide-react';
 

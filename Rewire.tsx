@@ -1,11 +1,11 @@
 import { useState } from 'react';
-import { useRewireStore, UrgeType } from '@/stores/rewireStore';
-import UrgeLogger from '@/components/UrgeLogger';
-import RewireDashboard from '@/components/RewireDashboard';
-import RewireReflection from '@/components/RewireReflection';
+import { useRewireStore, UrgeType } from './rewireStore';
+import UrgeLogger from './UrgeLogger';
+import RewireDashboard from './RewireDashboard';
+import RewireReflection from './RewireReflection';
 import { Zap, Target, ArrowRight, Shield } from 'lucide-react';
 import { motion } from 'framer-motion';
-import { haptics } from '@/lib/haptics';
+import { haptics } from './haptics';
 
 const URGE_SETUP: { value: UrgeType; label: string; emoji: string; desc: string }[] = [
   { value: 'drinking', label: 'Drinking', emoji: '🍺', desc: 'Urge to drink when stressed' },

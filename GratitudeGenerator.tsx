@@ -1,10 +1,10 @@
 import { useState, useCallback } from 'react';
-import { useAppStore } from '@/stores/appStore';
-import { GratitudeEntry, RegulationState } from '@/types';
+import { useAppStore } from './appStore';
+import { GratitudeEntry, RegulationState } from './types';
 import { Sparkles, X, ChevronLeft, Shield, Wind, Brain, Clock, MessageSquare, Compass } from 'lucide-react';
-import { haptics } from '@/lib/haptics';
-import { fireConfetti } from '@/lib/confetti';
-import { sounds } from '@/lib/sounds';
+import { haptics } from './haptics';
+import { fireConfetti } from './confetti';
+import { sounds } from './sounds';
 
 interface Props {
   onClose: () => void;
