@@ -1,8 +1,8 @@
 import { useState, useEffect, useRef } from 'react';
-import { useRewireStore, UrgeType, UrgeEntry, REPLACEMENT_OPTIONS } from '@/stores/rewireStore';
-import { haptics } from '@/lib/haptics';
-import { sounds } from '@/lib/sounds';
-import { fireConfetti } from '@/lib/confetti';
+import { useRewireStore, UrgeType, UrgeEntry, REPLACEMENT_OPTIONS } from './rewireStore';
+import { haptics } from './haptics';
+import { sounds } from './sounds';
+import { fireConfetti } from './confetti';
 import { X, Timer, ChevronRight, Check } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 

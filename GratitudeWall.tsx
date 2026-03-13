@@ -1,8 +1,8 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
-import { supabase } from '@/integrations/supabase/client';
+import { supabase } from './client';
 import { Send, Heart, Sparkles, Pencil, Check, X, RefreshCw } from 'lucide-react';
-import { haptics } from '@/lib/haptics';
-import { fireStars } from '@/lib/confetti';
+import { haptics } from './haptics';
+import { fireStars } from './confetti';
 import { motion, AnimatePresence } from 'framer-motion';
 
 interface WallPost {

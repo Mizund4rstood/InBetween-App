@@ -1,11 +1,11 @@
 import { useMemo, useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
-import { useAppStore } from '@/stores/appStore';
-import { useRewireStore } from '@/stores/rewireStore';
-import { useCompassStore } from '@/stores/compassStore';
-import { supabase } from '@/integrations/supabase/client';
-import { calculateStreak, isToday } from '@/lib/analytics';
+import { useAppStore } from './appStore';
+import { useRewireStore } from './rewireStore';
+import { useCompassStore } from './compassStore';
+import { supabase } from './client';
+import { calculateStreak, isToday } from './analytics';
 import {
   Brain, Zap, Wind, Eye, Heart, Sparkles, Activity,
   ChevronRight, Shield

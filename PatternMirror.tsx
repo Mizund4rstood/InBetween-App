@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
-import { supabase } from '@/integrations/supabase/client';
-import { useAppStore } from '@/stores/appStore';
+import { supabase } from './client';
+import { useAppStore } from './appStore';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Brain, Clock, Calendar, Heart, Zap, TrendingUp, Sparkles, RefreshCw, ChevronDown, ChevronUp } from 'lucide-react';
 import { toast } from 'sonner';

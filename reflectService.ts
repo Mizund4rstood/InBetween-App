@@ -1,5 +1,5 @@
-import { supabase } from '@/integrations/supabase/client';
-import { GratitudeEntry, GroundingSession } from '@/types';
+import { supabase } from './client';
+import { GratitudeEntry, GroundingSession } from './types';
 
 const REFLECT_URL = `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/reflect`;
 const YOUTUBE_URL = `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/youtube-data`;

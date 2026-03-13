@@ -2,8 +2,8 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Wine, Zap, CloudRain, Users, Snowflake, ArrowRight, RotateCcw, Wind, Eye, Brain, Dumbbell, Palette, Heart, Scan, Pause } from 'lucide-react';
-import { haptics } from '@/lib/haptics';
-import { sounds } from '@/lib/sounds';
+import { haptics } from './haptics';
+import { sounds } from './sounds';
 
 // Step definitions for the guided journey
 type JourneyStep = 'situation' | 'body' | 'pause' | 'tools' | 'reflection';

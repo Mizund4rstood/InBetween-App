@@ -1,11 +1,11 @@
 import { useState, useEffect, useRef } from 'react';
-import { useAppStore, VisualMode, FocusArea, UserIntent } from '@/stores/appStore';
+import { useAppStore, VisualMode, FocusArea, UserIntent } from './appStore';
 import { ChevronRight, ChevronLeft, Target, Compass, Sparkles, Brain, Zap, Eye, LogOut } from 'lucide-react';
-import { haptics } from '@/lib/haptics';
-import { sounds } from '@/lib/sounds';
+import { haptics } from './haptics';
+import { sounds } from './sounds';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Progress } from '@/components/ui/progress';
-import { useAuth } from '@/hooks/useAuth';
+import { Progress } from './progress';
+import { useAuth } from './useAuth';
 
 // ─── Step configs ───
 

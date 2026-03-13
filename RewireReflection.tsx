@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
-import { useRewireStore } from '@/stores/rewireStore';
-import { callReflect } from '@/lib/reflectService';
+import { useRewireStore } from './rewireStore';
+import { callReflect } from './reflectService';
 import { motion } from 'framer-motion';
 import { Brain, Loader2, RefreshCw } from 'lucide-react';
-import ListenButton from '@/components/ListenButton';
-import MediaSourceBadges from '@/components/MediaSourceBadges';
+import ListenButton from './ListenButton';
+import MediaSourceBadges from './MediaSourceBadges';
 
 export default function RewireReflection() {
   const { urges, getPhase, getWeek, getMetrics, activeUrgeTypes } = useRewireStore();

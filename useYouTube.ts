@@ -1,6 +1,6 @@
 import { useState, useCallback } from "react";
-import { supabase } from "@/integrations/supabase/client";
-import { useAuth } from "@/hooks/useAuth";
+import { supabase } from "./client";
+import { useAuth } from "./useAuth";
 
 interface YouTubeChannel {
   id: string;

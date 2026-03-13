@@ -1,12 +1,12 @@
 import { useState } from 'react';
-import TimeOnDevice from '@/components/TimeOnDevice';
+import TimeOnDevice from './TimeOnDevice';
 import { useNavigate } from 'react-router-dom';
-import { useAppStore } from '@/stores/appStore';
-import { usePremiumStore } from '@/stores/premiumStore';
-import { useAuth } from '@/hooks/useAuth';
-import { useTTS } from '@/hooks/useTTS';
-import { useYouTube } from '@/hooks/useYouTube';
-import { useSpotify } from '@/hooks/useSpotify';
+import { useAppStore } from './appStore';
+import { usePremiumStore } from './premiumStore';
+import { useAuth } from './useAuth';
+import { useTTS } from './useTTS';
+import { useYouTube } from './useYouTube';
+import { useSpotify } from './useSpotify';
 import { Moon, Sun, Download, Trash2, Shield, Wrench, Volume2, VolumeX, Sparkles, Check, Mic, LogOut, ChevronDown, Play, Loader2, Square, Youtube, Link, Unlink, Music, HelpCircle, Heart } from 'lucide-react';
 
 export default function SettingsPage() {

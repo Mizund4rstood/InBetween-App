@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
-import { haptics } from '@/lib/haptics';
-import { sounds } from '@/lib/sounds';
+import { haptics } from './haptics';
+import { sounds } from './sounds';
 
 const FEELINGS = [
   { label: 'Stressed', emoji: '😰' },

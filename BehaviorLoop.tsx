@@ -1,10 +1,10 @@
 import { useState, useCallback } from 'react';
-import { useCompassStore, CompassTrigger, CompassChoice } from '@/stores/compassStore';
+import { useCompassStore, CompassTrigger, CompassChoice } from './compassStore';
 import { ChevronLeft, Edit3, Check, RotateCcw } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { PremiumGate } from '@/components/PremiumGate';
-import { usePremiumStore } from '@/stores/premiumStore';
+import { PremiumGate } from './PremiumGate';
+import { usePremiumStore } from './premiumStore';
 
 interface LoopNode {
   id: 'trigger' | 'thought' | 'emotion' | 'behavior' | 'outcome';

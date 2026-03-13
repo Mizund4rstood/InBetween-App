@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ChevronLeft, Wind, Compass, Home, BookOpen, Zap, Pause, Shield, Sparkles, CalendarDays, Settings, Heart, Brain, Music, Youtube, Flame, Eye, Hand } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import InBetweenPhilosophy from '@/components/InBetweenPhilosophy';
+import InBetweenPhilosophy from './InBetweenPhilosophy';
 
 interface Guide {
   id: string;

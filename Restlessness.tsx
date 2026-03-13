@@ -2,10 +2,10 @@ import { useState, useEffect, useRef, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, Activity, Wind, Hand, Brain, RotateCcw, Check } from 'lucide-react';
-import Fireflies from '@/components/Fireflies';
-import { haptics } from '@/lib/haptics';
-import { sounds } from '@/lib/sounds';
-import { supabase } from '@/integrations/supabase/client';
+import Fireflies from './Fireflies';
+import { haptics } from './haptics';
+import { sounds } from './sounds';
+import { supabase } from './client';
 
 type Tool = 'menu' | 'bodyscan' | 'movement' | 'fidget' | 'reframe' | 'done';
 

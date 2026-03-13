@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useCompassStore, CompassTrigger } from '@/stores/compassStore';
+import { useCompassStore, CompassTrigger } from './compassStore';
 import { Trash2, ChevronDown, ChevronUp } from 'lucide-react';
 
 export default function TriggerHistoryPage() {

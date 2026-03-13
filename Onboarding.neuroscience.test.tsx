@@ -1,7 +1,7 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
 import { render, act } from "@testing-library/react";
 
-vi.mock("@/hooks/useAuth", () => ({
+vi.mock("./useAuth", () => ({
   useAuth: () => ({
     user: { id: "test-user" },
     session: null,
@@ -12,7 +12,7 @@ vi.mock("@/hooks/useAuth", () => ({
   }),
 }));
 
-vi.mock("@/lib/haptics", () => ({
+vi.mock("./haptics", () => ({
   haptics: {
     light: vi.fn(),
     medium: vi.fn(),
@@ -20,7 +20,7 @@ vi.mock("@/lib/haptics", () => ({
   },
 }));
 
-import Onboarding from "@/components/Onboarding";
+import Onboarding from "./Onboarding";
 
 describe("Onboarding – Neuroscience peak zone styling", () => {
   let nowMs = 0;

@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { ArrowRight, Home } from 'lucide-react';
-import { haptics } from '@/lib/haptics';
-import { sounds } from '@/lib/sounds';
+import { haptics } from './haptics';
+import { sounds } from './sounds';
 
 interface Props {
   feeling: string;

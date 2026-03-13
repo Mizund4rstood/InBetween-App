@@ -2,11 +2,11 @@ import { useState, useEffect } from 'react';
 import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
 import { Home, Compass, Wind, BookOpen, Zap, Pause, CalendarDays, Sparkles, Settings, Shield, HelpCircle, Users, Music2, LogOut, User } from 'lucide-react';
-import { haptics } from '@/lib/haptics';
-import { useAppStore, AppMode } from '@/stores/appStore';
-import { useAuth } from '@/hooks/useAuth';
-import { supabase } from '@/integrations/supabase/client';
-import MiniPlayer from '@/components/MiniPlayer';
+import { haptics } from './haptics';
+import { useAppStore, AppMode } from './appStore';
+import { useAuth } from './useAuth';
+import { supabase } from './client';
+import MiniPlayer from './MiniPlayer';
 import {
   DropdownMenu,
   DropdownMenuTrigger,
@@ -14,7 +14,7 @@ import {
   DropdownMenuItem,
   DropdownMenuSeparator,
   DropdownMenuLabel,
-} from '@/components/ui/dropdown-menu';
+} from './dropdown-menu';
 
 const groundNav = [
   { to: '/', icon: Home, label: 'Home' },

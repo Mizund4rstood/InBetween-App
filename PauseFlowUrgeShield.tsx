@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { sounds } from '@/lib/sounds';
-import { haptics } from '@/lib/haptics';
+import { sounds } from './sounds';
+import { haptics } from './haptics';
 import { Shield } from 'lucide-react';
 
 const GROUNDING_PROMPTS = [

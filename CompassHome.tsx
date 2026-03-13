@@ -1,15 +1,15 @@
 import { useEffect, useMemo } from 'react';
-import { useCompassStore } from '@/stores/compassStore';
-import { useAppStore } from '@/stores/appStore';
-import { calculateStreak } from '@/lib/analytics';
+import { useCompassStore } from './compassStore';
+import { useAppStore } from './appStore';
+import { calculateStreak } from './analytics';
 import { Compass, Zap, TrendingUp, Target, ArrowRight, Hand, Shuffle, RotateCcw, Lock, Pause } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import VaultSurface from '@/components/VaultSurface';
-import BehaviorCompass from '@/components/BehaviorCompass';
-import PatternMirror from '@/components/PatternMirror';
-import FutureSelfCard from '@/components/FutureSelf';
-import ProgressStory from '@/components/ProgressStory';
+import VaultSurface from './VaultSurface';
+import BehaviorCompass from './BehaviorCompass';
+import PatternMirror from './PatternMirror';
+import FutureSelfCard from './FutureSelf';
+import ProgressStory from './ProgressStory';
 
 export default function CompassHomePage() {
   const { triggers, choices, fetchTriggers, fetchChoices, loading } = useCompassStore();

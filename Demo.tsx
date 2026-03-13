@@ -1,4 +1,4 @@
-import Onboarding from '@/components/Onboarding';
+import Onboarding from './Onboarding';
 
 /**
  * Dev-only route to preview onboarding steps without authentication.

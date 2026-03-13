@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { useAppStore } from '@/stores/appStore';
-import BreathingTimer from '@/components/BreathingTimer';
+import { useAppStore } from './appStore';
+import BreathingTimer from './BreathingTimer';
 import { Wind, Eye } from 'lucide-react';
 
 type Mode = 'menu' | 'breathing' | '54321';

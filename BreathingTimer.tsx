@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
-import { sounds } from '@/lib/sounds';
-import { haptics } from '@/lib/haptics';
+import { sounds } from './sounds';
+import { haptics } from './haptics';
 
 type Phase = 'inhale' | 'hold1' | 'exhale' | 'hold2';
 const phaseLabels: Record<Phase, string> = {

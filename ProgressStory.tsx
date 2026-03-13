@@ -1,8 +1,8 @@
 import { useMemo } from 'react';
 import { motion } from 'framer-motion';
-import { useAppStore } from '@/stores/appStore';
-import { useCompassStore } from '@/stores/compassStore';
-import { calculateStreak } from '@/lib/analytics';
+import { useAppStore } from './appStore';
+import { useCompassStore } from './compassStore';
+import { calculateStreak } from './analytics';
 
 interface Stage {
   week: number;

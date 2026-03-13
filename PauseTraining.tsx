@@ -1,10 +1,10 @@
 import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { haptics } from '@/lib/haptics';
-import { sounds } from '@/lib/sounds';
+import { haptics } from './haptics';
+import { sounds } from './sounds';
 import { Pause, Play, RotateCcw, MessageCircle } from 'lucide-react';
-import { FutureSelfPlayer, FutureSelfRecorder } from '@/components/FutureSelf';
-import { supabase } from '@/integrations/supabase/client';
+import { FutureSelfPlayer, FutureSelfRecorder } from './FutureSelf';
+import { supabase } from './client';
 
 type Phase = 'intro' | 'countdown' | 'breathing' | 'reflect' | 'complete';
 

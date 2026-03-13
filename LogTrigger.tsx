@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useCompassStore } from '@/stores/compassStore';
-import { haptics } from '@/lib/haptics';
-import { sounds } from '@/lib/sounds';
-import { fireConfetti } from '@/lib/confetti';
-import { bridgeCompassToRewire } from '@/lib/compassRewireBridge';
-import CrisisSupport, { detectCrisis } from '@/components/CrisisSupport';
+import { useCompassStore } from './compassStore';
+import { haptics } from './haptics';
+import { sounds } from './sounds';
+import { fireConfetti } from './confetti';
+import { bridgeCompassToRewire } from './compassRewireBridge';
+import CrisisSupport, { detectCrisis } from './CrisisSupport';
 import { ChevronLeft, Zap, Heart, Target, Check, HandMetal, Shuffle } from 'lucide-react';
 
 type Step = 'trigger' | 'choice' | 'done';

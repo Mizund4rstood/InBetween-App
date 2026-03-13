@@ -1,12 +1,12 @@
 import { useMemo } from 'react';
-import { useAppStore } from '@/stores/appStore';
-import { tagText } from '@/lib/analytics';
-import { generateInsights } from '@/lib/insights';
-import SteadinessCard from '@/components/SteadinessCard';
-import ListenButton from '@/components/ListenButton';
+import { useAppStore } from './appStore';
+import { tagText } from './analytics';
+import { generateInsights } from './insights';
+import SteadinessCard from './SteadinessCard';
+import ListenButton from './ListenButton';
 import { CalendarDays, Heart, Flame, TrendingUp, Sparkles, Brain } from 'lucide-react';
 import { motion } from 'framer-motion';
-import { RegulationState } from '@/types';
+import { RegulationState } from './types';
 
 function getLast7Days(): string[] {
   const days: string[] = [];

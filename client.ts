@@ -2,16 +2,64 @@
 import { createClient } from '@supabase/supabase-js';
 import type { Database } from './types';
 
-const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL;
-const SUPABASE_PUBLISHABLE_KEY = import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY;
+const FALLBACK_SUPABASE_URL = 'https://placeholder.supabase.co';
+const FALLBACK_SUPABASE_KEY = 'public-anon-key';
+
+const normalizeEnv = (value?: string) => {
+  const normalized = value?.trim();
+  if (!normalized) return '';
+  const lower = normalized.toLowerCase();
+  if (lower === 'undefined' || lower === 'null') return '';
+  return normalized;
+};
+
+const isValidHttpUrl = (value: string) => {
+  try {
+    const url = new URL(value);
+    return url.protocol === 'http:' || url.protocol === 'https:';
+  } catch {
+    return false;
+  }
+};
+
+const rawSupabaseUrl = normalizeEnv(import.meta.env.VITE_SUPABASE_URL);
+const rawSupabaseKey = normalizeEnv(
+  import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY || import.meta.env.VITE_SUPABASE_ANON_KEY
+);
+
+const resolvedSupabaseUrl = isValidHttpUrl(rawSupabaseUrl) ? rawSupabaseUrl : FALLBACK_SUPABASE_URL;
+const resolvedSupabaseKey = rawSupabaseKey || FALLBACK_SUPABASE_KEY;
+
+export const isSupabaseConfigured = Boolean(isValidHttpUrl(rawSupabaseUrl) && rawSupabaseKey);
+
+if (!isSupabaseConfigured) {
+  console.warn(
+    '[supabase] Invalid or missing VITE_SUPABASE_URL and/or VITE_SUPABASE_PUBLISHABLE_KEY (or VITE_SUPABASE_ANON_KEY). Using placeholder values so the app can render without crashing.'
+  );
+}
 
 // Import the supabase client like this:
-// import { supabase } from "@/integrations/supabase/client";
+// import { supabase } from "./client";
 
-export const supabase = createClient<Database>(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY, {
-  auth: {
-    storage: localStorage,
-    persistSession: true,
-    autoRefreshToken: true,
+const createSafeClient = () => {
+  try {
+    return createClient<Database>(resolvedSupabaseUrl, resolvedSupabaseKey, {
+      auth: {
+        storage: localStorage,
+        persistSession: true,
+        autoRefreshToken: true,
+      },
+    });
+  } catch (error) {
+    console.error('[supabase] Failed to initialize client with resolved values; falling back to placeholder config.', error);
+    return createClient<Database>(FALLBACK_SUPABASE_URL, FALLBACK_SUPABASE_KEY, {
+      auth: {
+        storage: localStorage,
+        persistSession: true,
+        autoRefreshToken: true,
+      },
+    });
   }
-});
+};
+
+export const supabase = createSafeClient();

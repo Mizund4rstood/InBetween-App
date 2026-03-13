@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Clock, TrendingDown, Leaf, BarChart3 } from 'lucide-react';
-import { useTimeOnDeviceStore } from '@/stores/timeOnDeviceStore';
+import { useTimeOnDeviceStore } from './timeOnDeviceStore';
 
 function formatTime(totalSeconds: number): string {
   const h = Math.floor(totalSeconds / 3600);
